@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Card</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        @font-face {
+            font-family: 'Copperplate';
+            src: local('Copperplate'), local('Copperplate Gothic Bold');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        header {
+            background-color: #e7a20dec;
+            color: #000000;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px; /* Add padding to align text and image to the left */
+            padding-right: 20px; /* Add padding to align text and image to the right */
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .header-container img {
+            height: 80px; /* Adjust the size of the logo */
+        }
+
+        .header-container h1 {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+            font-family: 'Copperplate', 'Arial Black', sans-serif; /* Change font to Copperplate */
+            /* Make the text italic */
+        }
+
+        .card {
+            background: #eff8f8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 330px;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid #333;
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+
+        .card .details {
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .card .details .title {
+            font-weight: bold;
+            color: #555;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px; /* Add this line to increase space between titles */
+        }
+
+        .card .details .title span {
+            flex: 1;
+        }
+
+        .card .details .title span:first-child {
+            flex: 0 0 140px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-container">
+
+        <h1><b>THRIVENI SAINIK MINING PRIVATE LIMITED</b></h1>
+
+    </div>
+</header>
+<div class="card">
+    <img src="Images/dummy.jpeg" alt="Employee Photo" style="width: 100px; height: 100px; border-radius: 50%;">
+    <h2>Chaturbhuja  Naik</h2>
+    <div class="details">
+        <div class="title"><span> AGENCY</span>:&nbsp;<span>Sainik</span></div>
+        <div class="title"><span> EMPLOYEE ID</span>:&nbsp; <span>90002105</span></div>
+        <div class="title"><span> DOJ</span>:&nbsp; <span>01.07.2023</span></div>
+        <div class="title"><span> FORM A</span>:&nbsp; <span>SMA:1291</span></div>
+        <div class="title"><span> IME NO.</span>:&nbsp; <span>TS-597</span></div>
+        <div class="title"><span> PME NO.</span>:&nbsp; <span></span></div>
+        <div class="title"><span> SOP SL. NO.</span>:&nbsp; <span>SOP/EO/205</span></div>
+        <div class="title"><span> AUTH. NO.</span>:&nbsp; <span></span></div>
+        <div class="title"><span> AUTH. AS</span>:&nbsp; <span></span></div>
+        <div class="title"><span> CONTACT NO.</span>:&nbsp; <span>7008758942</span></div>
+        <div class="title"><span> FATHER'S NAME</span>:&nbsp; <span>Bhimsen Naik</span></div>
+        <div class="title"><span> VTC</span>:&nbsp; <span>JSW/JAJANG/VT/2021/04</span></div>
+    </div>
+</div>
+</body>
+</html>
